@@ -326,12 +326,16 @@ h1 {
     margin-left: 8px;
 }
 
+
+
 @media(max-width: 1200px) {
     .contentCont {
         width: calc(100% - 200px);
         min-width: 100%;
     }
 }
+
+
 
 @media(max-width: 900px) {
     .tasks {
@@ -351,23 +355,31 @@ h1 {
     }
 }
 
+
+
 @media(max-width: 620px) {
+
     .contentCont {
         margin-top: 60px;
     }
+
     .content {
         flex-wrap: wrap;
     }
+
     .boards {
         margin-top: 16px !important;
         width: 40vw;
         margin-top: 0;
     }
+
     .board {
         margin-top: 2px;
         height: 36vh;
     }
 }
+
+
 
 @media(max-width: 450px) {
     .openTask {
@@ -392,12 +404,29 @@ h1 {
     .currentEmployer2 {
         margin-top: 8px;
     }
+
+    .closeTask {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .delete {
+        position: absolute;
+        top: 0;
+        margin-top: 32px;
+        right: 0;
+    }
 }
 
+
+
 @media(max-width: 400px) {
+
     .boards {
         width: 90%;
     }
+
     .board {
         height: 80vh;
     }
