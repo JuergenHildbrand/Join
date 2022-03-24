@@ -60,7 +60,6 @@ function forLoop2(currentInProgress) {
         }
     }
 }
-
 function forLoop3(currentTesting) {
     for (let i = 0; i < currentTesting.length; i++) {
         let element = currentTesting[i];
@@ -73,7 +72,6 @@ function forLoop3(currentTesting) {
         }
     }
 }
-
 function forLoop4(currentDone) {
     for (let i = 0; i < currentDone.length; i++) {
         let element = currentDone[i];
@@ -245,7 +243,6 @@ function pushToOtherBoard(i) {
     document.getElementById('overlayBg').classList.add('d-none');
     document.getElementById('openTask').classList.add('d-none');
     document.getElementById('openTask').classList.remove('exit-ani');
-
     save();
 }
 
@@ -266,7 +263,6 @@ function backToBoard() {
         document.getElementById('openTask1').classList.remove('exit-openTask');
         document.getElementById('overlayBg').classList.remove('exit-ani-o-t');
     }, 300);
-
 }
 
 /**
