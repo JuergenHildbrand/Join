@@ -1,4 +1,4 @@
-setURL('http://gruppe-177.developerakademie.net/smallest_backend_ever');
+setURL('https://www.juergenhildbrand.ch/smallest_backend_ever');
 let boardArray = [];
 /**
  *  to load and show saved taskes from Server
