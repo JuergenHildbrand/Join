@@ -132,7 +132,7 @@ function close_popup(i) {
  */
 //  let staff_member = document.getElementById(`employee_${i}`);
 function assigningEmployees(i) {
-    let profile_pictures = document.getElementById('profile_pictures');
+    let profile_pictures = document.getElementById('employeesPic');
     profile_pictures.innerHTML += `
      <div class="popup" onclick="popup(${i})">
         <img src="${EmployeesArray[i]['bild-src']}" class="profile-picture">
@@ -143,7 +143,7 @@ function assigningEmployees(i) {
         </div>
      </div>
     `;
-    assignedEmployees.push(EmployeesArray[i]);
+    assignedEmployees.unshift(EmployeesArray[i]);
 }
 
 /**
