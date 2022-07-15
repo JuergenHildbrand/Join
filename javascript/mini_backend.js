@@ -37,7 +37,7 @@ async function loadJSONFromServer() {
 }
 function loadJSONFromServerOld() {
     return new Promise(function(resolve, reject) {
-        let xhttp = new XMLhttpRequest();
+        let xhttp = new XMLHttpRequest();
         let proxy = determineProxySettings();
         let serverURL = proxy + BASE_SERVER_URL + '/nocors.php?json=database&noache=' + (new Date().getTime());
         xhttp.open('GET', serverURL);
@@ -59,7 +59,7 @@ function loadJSONFromServerOld() {
  */
 function saveJSONToServer() {
     return new Promise(function(resolve, reject) {
-        let xhttp = new XMLhttpRequest();
+        let xhttp = new XMLHttpRequest();
         let proxy = determineProxySettings();
         let serverURL = proxy + BASE_SERVER_URL + '/save_json.php';
         xhttp.open('POST', serverURL);
